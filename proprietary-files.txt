@@ -5,10 +5,10 @@
 
 bin/akmd2
 bin/ap_gain.bin
-bin/ap_gain_mmul.bin
+#bin/ap_gain_mmul.bin
 bin/battd
 bin/brcm_guci_drv
-bin/fmradioserver
+#bin/fmradioserver
 bin/gkisystem
 bin/location
 bin/nvm_daemon
@@ -52,14 +52,14 @@ lib/egl/libGLESv2_POWERVR_SGX530_125.so
 lib/hw/gps.milestone2.so
 lib/hw/gralloc.omap3.so
 lib/libarcsoft.so
-#lib/libaudio.so
+lib/libaudio.so
 lib/libbattd.so
 lib/libbayercamera.so
 lib/libcaps.so
 lib/libcryptoki.so
-lib/libfmradio_jni.so
-lib/libfmradioplayer.so
-lib/libFMRadio.so
+#lib/libfmradio_jni.so
+#lib/libfmradioplayer.so
+#lib/libFMRadio.so
 lib/libganril.so
 lib/libgki.so
 lib/libglslcompiler.so
@@ -110,9 +110,9 @@ framework/com.motorola.android.location.jar
 
 #app/FMRadio.apk
 #app/FMRadioService.apk
-app/MotoPhonePortal.apk
-app/AudioEffectSettings.apk
-app/CompassCalibrate.apk
+#app/MotoPhonePortal.apk
+#app/AudioEffectSettings.apk
+#app/CompassCalibrate.apk
 
 etc/cameraCalFileDef5M.bin
 etc/cameraCalFileDef8M.bin
