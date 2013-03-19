@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-device_path = device/moto/milestone2
+device_path = device/motorola/milestone2
 
 PRODUCT_COPY_FILES += \
 	$(device_path)/etc/terminfo/l/linux:system/etc/terminfo/l/linux \
@@ -25,17 +25,17 @@ PRODUCT_COPY_FILES += \
 	$(device_path)/usr/keychars/sholes-keypad.kcm:system/usr/keychars/sholes-keypad.kcm
 		
 # copy all idc files
-PRODUCT_COPY_FILES += $(shell test -d device/moto/milestone2/usr/idc/ &&  \
+PRODUCT_COPY_FILES += $(shell test -d device/motorola/milestone2/usr/idc/ &&  \
 	find $(device_path)/usr/idc/ -name '*.idc' \
 	-printf '%p:system/usr/idc/%f ')
 	
 # copy all keylayout files
-PRODUCT_COPY_FILES += $(shell test -d device/moto/milestone2/usr/keylayout/ &&  \
+PRODUCT_COPY_FILES += $(shell test -d device/motorola/milestone2/usr/keylayout/ &&  \
 	find $(device_path)/usr/keylayout/ -name '*.kl' \
 	-printf '%p:system/usr/keylayout/%f ')
 	
 # copy all keychars files
-PRODUCT_COPY_FILES += $(shell test -d device/moto/milestone2/usr/keychars/ &&  \
+PRODUCT_COPY_FILES += $(shell test -d device/motorola/milestone2/usr/keychars/ &&  \
 	find $(device_path)/usr/keychars/ -name '*.kcm' \
 	-printf '%p:system/usr/keychars/%f ')
 
@@ -66,7 +66,7 @@ PRODUCT_COPY_FILES += \
 # New CM9 backup list system (addon.d)
 PRODUCT_COPY_FILES += \
 	${device_path}/releasetools/addon.d/60-baseband.sh:system/addon.d/60-baseband.sh \
-	${device_path}/releasetools/addon.d/70-gapps.sh:system/addon.d/70-gapps.sh \
+#	${device_path}/releasetools/addon.d/70-gapps.sh:system/addon.d/70-gapps.sh \
 
 # Backup kernel modules and bootmenu overclock config
 ifndef CM_RELEASE
@@ -76,7 +76,7 @@ PRODUCT_COPY_FILES += \
 endif
 
 # Copy prebuilt apps
-PRODUCT_COPY_FILES += \
-	${device_path}/app/OTAUpdater.apk:system/app/OTAUpdater.apk
+#PRODUCT_COPY_FILES += \
+#	${device_path}/app/OTAUpdater.apk:system/app/OTAUpdater.apk
 
 #end of milestone2-blobs.mk
