@@ -23,7 +23,7 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, device/moto/milestone2/device.mk)
+$(call inherit-product, device/motorola/milestone2/device.mk)
 
 PRODUCT_NAME := full_milestone2
 PRODUCT_DEVICE := milestone2
