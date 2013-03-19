@@ -40,7 +40,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # we have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
 
-DEVICE_PACKAGE_OVERLAYS += device/moto/milestone2/overlay
+DEVICE_PACKAGE_OVERLAYS += device/motorola/milestone2/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -108,18 +108,18 @@ PRODUCT_COPY_FILES += $(shell test -d vendor/motorola/milestone2/lib/modules && 
 	-printf '%p:system/lib/modules/%f ')
 
 # copy all others kernel modules under the "modules" directory to system/lib/modules
-PRODUCT_COPY_FILES += $(shell test -d device/moto/milestone2/modules && \
-	find device/moto/milestone2/modules -name '*.ko' \
+PRODUCT_COPY_FILES += $(shell test -d device/motorola/milestone2/modules && \
+	find device/motorola/milestone2/modules -name '*.ko' \
 	-printf '%p:system/lib/modules/%f ')
 
 # Prebuilt boot.img
-LOCAL_KERNEL := device/moto/milestone2/kernel
+LOCAL_KERNEL := device/motorola/milestone2/kernel
 PRODUCT_COPY_FILES += \
 	$(LOCAL_KERNEL):kernel
 
 # Blobs and bootmenu stuff
-$(call inherit-product, device/moto/milestone2/milestone2-blobs.mk)
-$(call inherit-product, device/moto/milestone2/bootmenu/bootmenu.mk)
+$(call inherit-product, device/motorola/milestone2/milestone2-blobs.mk)
+$(call inherit-product, device/motorola/milestone2/bootmenu/bootmenu.mk)
 
 $(call inherit-product, build/target/product/full_base.mk)
 
